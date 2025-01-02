@@ -14,11 +14,42 @@
         }
 
         header {
-            padding: 20px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
             font-size: 24px;
             font-weight: bold;
             color: #4c5c96;
             border-bottom: 1px solid #ddd;
+        }
+
+        header img {
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4c5c96;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #ffa726;
         }
 
         .hero {
@@ -56,82 +87,45 @@
             color: #555;
         }
 
-        .portfolio {
-            padding: 50px;
-            background: linear-gradient(135deg, #e0e4eb, #ffffff);
+        .introduction {
             text-align: center;
-            margin: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            background-color: #fff;
         }
 
-        .portfolio h2 {
-            margin-bottom: 15px;
+        .introduction h1 {
+            font-size: 3em;
+            color: #4c5c96;
+        }
+
+        .introduction p {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 40px;
+            background-color: #f0f0f5;
+        }
+
+        .cta h2 {
             font-size: 2.5em;
             color: #4c5c96;
         }
 
-        .portfolio p {
-            font-size: 1.2em;
-            color: #666;
-            line-height: 1.8;
-        }
-
-        .feature-box {
-            display: flex;
-            gap: 30px;
-            justify-content: center;
-            margin: 50px 20px;
-        }
-
-        .feature {
-            background: linear-gradient(135deg, #ffffff, #f9f9f9);
-            border-radius: 15px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            text-align: center;
-            flex: 1;
-            max-width: 400px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .feature:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .feature img {
-            max-width: 100%;
-            border-radius: 15px;
-            margin-bottom: 20px;
-        }
-
-        .feature h3 {
-            font-size: 1.8em;
-            color: #333;
-            margin-bottom: 15px;
-        }
-
-        .feature p {
-            font-size: 1.1em;
-            color: #555;
-            line-height: 1.8;
-        }
-
-        .feature a {
-            color: #4c5c96;
+        .cta-button {
+            padding: 15px 30px;
+            background-color: #4c5c96;
+            color: white;
             text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background: #e8ecfd;
-            border-radius: 6px;
-            transition: background 0.3s ease;
+            border-radius: 5px;
+            font-size: 1.2em;
         }
 
-        .feature a:hover {
-            background: #d6e0fc;
+        .cta-button:hover {
+            background-color: #3a4a7c;
         }
 
         footer {
@@ -157,39 +151,30 @@
             text-decoration: underline;
         }
 
-        .subscribe {
+        footer .copyright {
             margin-top: 20px;
-        }
-
-        .subscribe input {
-            padding: 10px;
-            width: 300px;
-            max-width: 90%;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
-
-        .subscribe button {
-            padding: 10px 20px;
-            background-color: #ffa726;
-            border: none;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-        }
-
-        .subscribe button:hover {
-            background-color: #e5941c;
         }
     </style>
 </head>
 <body>
-    <!-- New Header -->
-    <header>TheBorinSite</header>
 
-    <section class="hero">
+    <!-- New Header with Logo and Title -->
+    <header>
+        <img src="borin logo.jpeg" alt="Borin Logo">
+        <span>TheBorinSite</span>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
         <img src="Sourov Purple.jpg" alt="Purple-themed Sourov image">
         <div class="description">
             <h2>Online Portfolio Showcase</h2>
@@ -197,35 +182,26 @@
         </div>
     </section>
 
-    <section class="portfolio">
-        <h2>My Portfolio</h2>
-        <p>Welcome to my portfolio. Here you’ll find a selection of my work. Explore my projects to learn more about what I do.</p>
+    <!-- Introduction Section -->
+    <section class="introduction" id="about">
+        <h1>Hi, I'm Sourov!</h1>
+        <p>I'm a passionate coder and photographer, always looking for new challenges to improve my skills. Welcome to my personal website, where you can explore my projects and photography work.</p>
     </section>
 
-    <section class="feature-box">
-        <div class="feature">
-            <img src="Ai Coding.png" alt="AI Coding">
-            <h3>GitHub Projects</h3>
-            <p>Explore my innovative coding projects on GitHub. From AI solutions to web development, you'll find a range of tech-driven creations.</p>
-            <a href="https://github.com/theborinprogrammer" target="_blank">Check out my GitHub</a>
-        </div>
-        <div class="feature">
-            <img src="Ai coding.jpeg" alt="Photography Portfolio">
-            <h3>Photography</h3>
-            <p>Dive into my photography journey, capturing stunning moments with creativity and precision. Discover my visual storytelling skills through every shot I take.</p>
-            <p>Explore more of my photography work on my <br><a href="https://shitolbd.com" target="_blank">Photography Portfolio</a>.</p>
-        </div>
+    <!-- Call to Action (CTA) -->
+    <section class="cta">
+        <h2>Interested in My Work?</h2>
+        <a href="#portfolio" class="cta-button">Explore My Portfolio</a>
     </section>
 
+    <!-- Footer with Copyright -->
     <footer>
         <p>Contact Me at <a href="mailto:sourovsaha@proton.me">sourovsaha@proton.me</a></p>
         <p>Fast, innovative, and driven to deliver high-quality coding and photography solutions.</p>
-        <div class="subscribe">
-            <label for="email">Stay Connected with Us:</label><br>
-            <input type="email" id="email" placeholder="Your Email Here">
-            <button type="button">Subscribe</button>
+        <div class="copyright">
+            <p>&copy; 2025 TheBorinSite. All rights reserved.</p>
         </div>
-        <p>Thanks For Surfing</p>
     </footer>
+
 </body>
 </html>
