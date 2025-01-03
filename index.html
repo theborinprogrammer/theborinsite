@@ -56,6 +56,14 @@
             z-index: 1000;
             transition: background-color 0.3s ease;
         }
+        
+        /* Hide "My Resume" button on mobile devices */
+        @media (max-width: 768px) {
+            .nav-list .resume-link {
+            display: none;
+            }
+        }
+
 
         header img {
             height: 50px;
