@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="TheBorinSite showcases coding projects and stunning photography by Sourov Kumar Saha.">
     <meta name="keywords" content="portfolio, coding, photography, web design, GitHub, creative">
@@ -8,7 +9,7 @@
     <title>TheBorinSite</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="borin logo.jpeg"> <!-- Change the path as needed -->
+    <link rel="icon" type="image/jpeg" href="borin logo.jpeg">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
@@ -36,7 +37,7 @@
             background-color: var(--secondary-color);
             line-height: 1.6;
             scroll-behavior: smooth;
-            padding-top: 50px; /* Adjust header sticky overlap */
+            padding-top: 50px;
         }
 
         header {
@@ -94,16 +95,19 @@
             text-align: center;
             padding: 20px;
             position: relative;
+            flex-wrap: wrap;
         }
 
         .hero .left-side {
             width: 45%;
             text-align: left;
+            margin-bottom: 20px;
         }
 
         .hero .right-side {
             width: 45%;
             text-align: right;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
@@ -122,14 +126,14 @@
         .hero img {
             width: 100%;
             height: 200px;
-            object-fit: cover; /* Keeps the image proportionate */
-            border-radius: 8px; /* Optionally keep rounded corners */
+            object-fit: cover;
+            border-radius: 8px;
         }
 
         /* Vertical Divider */
         .divider {
-            border-left: 2px solid var(--white); /* White divider line */
-            height: 100%; /* Full height of the hero section */
+            border-left: 2px solid var(--white);
+            height: 100%;
             margin: 0 20px;
         }
 
@@ -183,7 +187,7 @@
 
         .portfolio-item img {
             width: 100%;
-            height: 200px; /* Fix image height */
+            height: 200px;
             object-fit: cover;
             border-bottom: 3px solid var(--primary-color);
         }
@@ -247,11 +251,11 @@
             }
 
             .hero h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
             .hero p {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
 
             .section {
@@ -272,7 +276,7 @@
             }
 
             .portfolio-item img {
-                height: 150px; /* Adjust image size for mobile */
+                height: 150px;
             }
 
             footer {
@@ -280,7 +284,7 @@
             }
 
             .divider {
-                display: none; /* Remove divider on smaller screens */
+                display: none;
             }
         }
 
@@ -303,7 +307,7 @@
             }
 
             .portfolio-item img {
-                height: 150px; /* Adjust image size for smaller devices */
+                height: 150px;
             }
         }
     </style>
