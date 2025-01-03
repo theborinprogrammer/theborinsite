@@ -85,7 +85,7 @@
         .hero {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             height: 80vh;
             background: linear-gradient(to right, var(--primary-color), var(--accent-color));
             color: var(--white);
@@ -93,29 +93,16 @@
             padding: 20px;
             transition: background-color 0.3s ease;
             position: relative;
-            flex-direction: column;
-        }
-
-        .hero .divider {
-            position: absolute;
-            width: 80%;
-            height: 2px;
-            background-color: var(--white);
-            top: 50%;
-            left: 10%;
-            transform: translateY(-50%);
         }
 
         .hero .left-side {
             width: 45%;
             text-align: left;
-            padding-right: 10px;
         }
 
         .hero .right-side {
             width: 45%;
             text-align: right;
-            padding-left: 10px;
         }
 
         .hero h1 {
@@ -138,6 +125,14 @@
             object-fit: cover;
         }
 
+        /* Vertical Divider */
+        .divider {
+            border-left: 2px solid var(--white); /* White divider line */
+            height: 100%; /* Full height of the hero section */
+            margin: 0 20px;
+        }
+
+        /* Mobile-first responsive adjustments */
         .section {
             padding: 80px 10%;
             background-color: var(--white);
@@ -281,6 +276,10 @@
 
             footer {
                 padding: 20px 10px;
+            }
+
+            .divider {
+                display: none; /* Remove divider on smaller screens */
             }
         }
 
