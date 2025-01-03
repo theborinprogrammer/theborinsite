@@ -9,7 +9,7 @@
     <title>TheBorinSite</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="borin logo.jpeg"> <!-- Change the path as needed -->
+    <link rel="icon" type="image/jpeg" href="borin logo.jpeg">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
@@ -37,7 +37,7 @@
             background-color: var(--secondary-color);
             line-height: 1.6;
             scroll-behavior: smooth;
-            padding-top: 50px; /* Adjust header sticky overlap */
+            padding-top: 50px;
         }
 
         header {
@@ -95,16 +95,19 @@
             text-align: center;
             padding: 20px;
             position: relative;
+            flex-wrap: wrap;
         }
 
         .hero .left-side {
             width: 45%;
             text-align: left;
+            margin-bottom: 20px;
         }
 
         .hero .right-side {
             width: 45%;
             text-align: right;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
@@ -121,18 +124,16 @@
         }
 
         .hero img {
-            width: 150px; /* Set to the desired size */
-            height: 150px; /* Ensure it's the same height as width for a perfect circle */
-            object-fit: cover; /* Makes sure the image covers the area */
-            border-radius: 50%; /* Makes it a circle */
-            border: 5px solid var(--white); /* Optional: adds a white border around the circle */
-            margin-bottom: 20px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
         }
 
         /* Vertical Divider */
         .divider {
-            border-left: 2px solid var(--white); /* White divider line */
-            height: 100%; /* Full height of the hero section */
+            border-left: 2px solid var(--white);
+            height: 100%;
             margin: 0 20px;
         }
 
@@ -186,7 +187,7 @@
 
         .portfolio-item img {
             width: 100%;
-            height: 200px; /* Fix image height */
+            height: 200px;
             object-fit: cover;
             border-bottom: 3px solid var(--primary-color);
         }
@@ -250,11 +251,11 @@
             }
 
             .hero h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
             .hero p {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
 
             .section {
@@ -275,7 +276,7 @@
             }
 
             .portfolio-item img {
-                height: 150px; /* Adjust image size for mobile */
+                height: 150px;
             }
 
             footer {
@@ -283,7 +284,7 @@
             }
 
             .divider {
-                display: none; /* Remove divider on smaller screens */
+                display: none;
             }
         }
 
@@ -306,7 +307,7 @@
             }
 
             .portfolio-item img {
-                height: 150px; /* Adjust image size for smaller devices */
+                height: 150px;
             }
         }
     </style>
@@ -337,28 +338,34 @@
 
 <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Welcome to my portfolio. I'm Sourov Kumar Saha, a passionate coder and photographer. Explore my work below!</p>
+    <p>Hi! I'm Sourov, a passionate coder and photographer. I create seamless user experiences and capture moments with my lens.</p>
 </section>
 
 <section id="portfolio" class="section">
     <h2>Portfolio</h2>
     <div class="portfolio-items">
-        <!-- Example Portfolio Item -->
         <div class="portfolio-item">
-            <img src="portfolio1.jpg" alt="Project 1">
+            <img src="Ai Coding.png" alt="GitHub Projects">
             <div class="content">
-                <h3>Project 1</h3>
-                <p>A brief description of the project goes here.</p>
-                <a href="#">View Project</a>
+                <h3>GitHub Projects</h3>
+                <p>Explore my innovative coding creations on GitHub.</p>
+                <a href="https://github.com/theborinprogrammer" target="_blank">View GitHub</a>
             </div>
         </div>
-        <!-- Add more portfolio items as needed -->
+        <div class="portfolio-item">
+            <img src="Ai coding.jpeg" alt="Photography">
+            <div class="content">
+                <h3>Photography</h3>
+                <p>Capturing moments with creativity and precision.</p>
+                <a href="https://shitolbd.com" target="_blank">View Photos</a>
+            </div>
+        </div>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2025 TheBorinSite. All rights reserved.</p>
-    <p>Created by <a href="#">Sourov Kumar Saha</a></p>
+    <p>Contact: <a href="mailto:sourovkumarsaha@proton.me">sourovkumarsaha@proton.me</a></p>
+    <p>&copy; 2025 TheBorinSite. All Rights Reserved.</p>
 </footer>
 
 </body>
