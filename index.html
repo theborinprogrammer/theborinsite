@@ -91,7 +91,6 @@
             color: var(--white);
             text-align: center;
             padding: 20px;
-            transition: background-color 0.3s ease;
             position: relative;
         }
 
@@ -120,9 +119,9 @@
 
         .hero img {
             width: 100%;
-            border-radius: 50%;
             height: 200px;
-            object-fit: cover;
+            object-fit: cover; /* Keeps the image proportionate */
+            border-radius: 8px; /* Optionally keep rounded corners */
         }
 
         /* Vertical Divider */
@@ -172,6 +171,7 @@
             overflow: hidden;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
         }
 
         .portfolio-item:hover {
@@ -181,7 +181,7 @@
 
         .portfolio-item img {
             width: 100%;
-            height: 100%;
+            height: 200px; /* Fix image height */
             object-fit: cover;
             border-bottom: 3px solid var(--primary-color);
         }
@@ -270,8 +270,7 @@
             }
 
             .portfolio-item img {
-                height: 200px; /* Adjust image size for mobile */
-                object-fit: cover;
+                height: 150px; /* Adjust image size for mobile */
             }
 
             footer {
@@ -323,7 +322,7 @@
 <section class="hero">
     <div class="left-side">
         <h1>Welcome to TheBorinSite</h1>
-        <img src="Sourov Purple.jpg" alt="Sourov's Photo">
+        <img src="Sourov.jpeg" alt="Sourov's Photo">
     </div>
     <div class="divider"></div>
     <div class="right-side">
@@ -360,7 +359,7 @@
 
 <footer>
     <p>Contact: <a href="mailto:sourovkumarsaha@proton.me">sourovkumarsaha@proton.me</a></p>
-    <p>&copy; 2025 TheBorinSite. All rights reserved.</p>
+    <p>&copy; 2025 TheBorinSite. All Rights Reserved.</p>
 </footer>
 
 </body>
