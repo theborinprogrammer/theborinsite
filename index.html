@@ -6,10 +6,15 @@
     <meta name="description" content="TheBorinSite showcases coding projects and stunning photography by Sourov Kumar Saha.">
     <meta name="keywords" content="portfolio, coding, photography, web design, GitHub, creative">
     <meta name="author" content="Sourov Kumar Saha">
+    <meta property="og:title" content="TheBorinSite">
+    <meta property="og:description" content="Showcasing coding projects and stunning photography by Sourov Kumar Saha.">
+    <meta property="og:image" content="borin-logo.jpeg">
+    <meta property="og:url" content="https://yourwebsiteurl.com">
+    <meta name="twitter:card" content="summary_large_image">
     <title>TheBorinSite</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="borin logo.jpeg">
+    <link rel="icon" type="image/jpeg" href="borin-logo.jpeg">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
@@ -118,6 +123,7 @@
             object-fit: cover;
             margin-bottom: 20px;
             border-radius: 8px;
+            lazy-loading: auto;
         }
 
         .hero p {
@@ -189,6 +195,7 @@
             height: 200px;
             object-fit: cover;
             border-bottom: 3px solid var(--primary-color);
+            lazy-loading: auto;
         }
 
         .portfolio-item .content {
@@ -258,7 +265,7 @@
 <body>
 
 <header>
-    <img src="borin logo.jpeg" alt="Site Logo">
+    <img src="borin-logo.jpeg" alt="TheBorinSite Logo">
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -270,7 +277,7 @@
 <section class="hero">
     <div class="left-side">
         <h1>Welcome to TheBorinSite</h1>
-        <img src="Sourov.jpg" alt="Sourov Photo">
+        <img src="Sourov.jpg" alt="Portrait of Sourov">
     </div>
     <div class="divider"></div>
     <div class="right-side">
@@ -287,7 +294,7 @@
     <h2>Portfolio</h2>
     <div class="portfolio-items">
         <div class="portfolio-item">
-            <img src="Ai Coding.png" alt="GitHub Projects">
+            <img src="Ai-Coding.png" alt="GitHub Projects">
             <div class="content">
                 <h3>GitHub Projects</h3>
                 <p>Explore my innovative coding creations on GitHub.</p>
@@ -295,11 +302,11 @@
             </div>
         </div>
         <div class="portfolio-item">
-            <img src="Ai coding.jpeg" alt="Photography">
+            <img src="Ai-coding.jpeg" alt="Photography Gallery">
             <div class="content">
                 <h3>Photography</h3>
                 <p>Capturing moments with creativity and precision.</p>
-                <a href="" target="_blank">View Photos</a>
+                <a href="#" target="_blank">View Photos</a>
             </div>
         </div>
     </div>
