@@ -4,8 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="refresh" content="3; url=/" />
-  <title>Redirecting...</title>
+  <title>Loading Greatness!!!!</title>
   <style>
+    :root {
+      --neonblue: #00f0ff;
+      --neonred: #ff0055;
+      --white: #ffffff;
+    }
+
     * {
       box-sizing: border-box;
     }
@@ -13,7 +19,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: radial-gradient(circle at top left, #121212, #0f0f0f);
+      background-color: #0f0f0f;
       color: #dcdcdc;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
@@ -22,6 +28,35 @@
       height: 100vh;
       flex-direction: column;
       text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .glow-background {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: var(--white);
+      filter: blur(80px);
+      opacity: 0.2;
+      animation: pulseGlow 3s infinite ease-in-out;
+      z-index: 0;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {
+        background: var(--white);
+        opacity: 0.15;
+      }
+      33% {
+        background: var(--neonblue);
+        opacity: 0.18;
+      }
+      66% {
+        background: var(--neonred);
+        opacity: 0.18;
+      }
     }
 
     .logo {
@@ -29,6 +64,7 @@
       height: 64px;
       margin-bottom: 16px;
       animation: float 2s ease-in-out infinite;
+      z-index: 2;
     }
 
     @keyframes float {
@@ -37,49 +73,72 @@
       100% { transform: translateY(0); }
     }
 
-    .spinner {
-      border: 4px solid rgba(255, 255, 255, 0.15);
-      border-top: 4px solid #4fc3f7;
+    .neon-spinner {
+      width: 60px;
+      height: 60px;
+      border: 6px solid;
+      border-color: var(--white) transparent var(--neonblue) transparent;
       border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      animation: spin 1s linear infinite;
+      animation: neon-spin 1s linear infinite;
+      box-shadow:
+        0 0 10px var(--white),
+        0 0 20px var(--neonblue),
+        0 0 30px var(--neonred);
       margin: 24px auto;
+      z-index: 2;
     }
 
-    @keyframes spin {
-      to { transform: rotate(360deg); }
+    @keyframes neon-spin {
+      0% {
+        transform: rotate(0deg);
+        border-color: var(--white) transparent var(--neonblue) transparent;
+      }
+      33% {
+        border-color: var(--neonblue) transparent var(--neonred) transparent;
+      }
+      66% {
+        border-color: var(--neonred) transparent var(--white) transparent;
+      }
+      100% {
+        transform: rotate(360deg);
+        border-color: var(--white) transparent var(--neonblue) transparent;
+      }
     }
 
     h2 {
       margin: 0;
       font-size: 1.5rem;
+      z-index: 2;
     }
 
     p {
       margin-top: 8px;
       font-size: 0.95rem;
       color: #aaaaaa;
+      z-index: 2;
     }
 
     a {
-      color: #4fc3f7;
+      color: var(--neonblue);
       text-decoration: underline;
       font-weight: 500;
       transition: color 0.3s ease;
+      z-index: 2;
     }
 
     a:hover {
-      color: #81d4fa;
+      color: var(--neonred);
     }
   </style>
 </head>
 <body>
-  
+
+  <div class="glow-background"></div>
+
   <img src="https://i.postimg.cc/3ry3d1bS/borin-logo-1.jpg" alt="Logo" class="logo" />
 
   <h2>Hang tight, you're being redirected</h2>
-  <div class="spinner"></div>
+  <div class="neon-spinner"></div>
   <p>If it takes too long, <a href="https://theboring.site">click here</a>.</p>
 
   <script>
